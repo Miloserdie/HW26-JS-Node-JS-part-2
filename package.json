@@ -1,0 +1,27 @@
+{
+  "name": "hw27-webpack",
+  "version": "1.0.0",
+  "description": "Создайте на вашем github репозиторий по следующему шаблону HW#-name. Все результаты нужно запушить в ваш репозиторий и прикрепить ссылку на hillel портале.\r Создайте README.md с описанием задания.\r Нужно написать webpack сборку. Настройте output чтобы билд был в папке dist и js код собирался в bundle.js (dist/bundle.js).\r Добавьте конфиг что бы при создании bundle.js создавался index.html и в него подключался скрипт.\r Сделайте чтобы перед сборкой билда папка dist очищалась. \r Добавьте в сборку возможность запуска webpack dev server.d. Добавить script комманду в package.json.\r Создайте три класса в отдельных файлах:\r  Реализуйте Person который реализует класс Person\r name, age, gendor, interests\r Реализовать класс Student. Должны наследоваться от Person. Нужно заимпортить класс Person тобы от него отнаследоваться.\r Реализовать класс Teacher. Должны наследоваться от Person. Нужно заимпортить класс Person чтобы от него отнаследоваться.\r Class Teacher должен иметь дополнительное свойство subject.\r В файле index.js заимпортить классы Student and Teacher и создать инстансы (создать обьекты с классов) student и techer. Затем вывести созданные обьекты в консоль.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+	 "start":"webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miloserdie/HW27-Webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miloserdie/HW27-Webpack/issues"
+  },
+  "homepage": "https://github.com/Miloserdie/HW27-Webpack#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
